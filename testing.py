@@ -1,27 +1,19 @@
 import subprocess
 import random
 
-# DO NOT FORGET:
-# freopen("test.in", "r", stdin);
-# TO BE IN THE SAME DIRECTORY
+# DO NOT FORGET: freopen("test.in", "r", stdin);
+# Make Sure: TO BE IN THE SAME DIRECTORY or Change the path below
 
 while True:
-    n = random.randint(1, 25)
-    m = random.randint(1, 25)
-    comm = "RLDU"
-    ln = random.randint(1, 50)
-    inpu = ""
+    # INPUTS use random module
 
-    for i in range(ln):
-        inpu = inpu + comm[random.randint(0, 3)]
 
+    # write INPUTS in test.in
     with open('test.in', 'w') as file:
-        file.write(str(n) + ' ')
-        file.write(str(m) + '\n')
-        for i in inpu:
-            file.write(str(i))
-            
-    # DO NOT CHANGE ANY THING HERE!!!
+        # use write method and cast inputs to str()
+        
+
+    # DO NOT CHANGE ANY THING BELOW!!!
     with open('test.in', 'r') as file:
         for line in file:
             print(line, end='')
