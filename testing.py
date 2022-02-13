@@ -23,7 +23,7 @@ while True:
     subprocess.run(["g++", "myCode.cpp", "-o", "myCode"])
     subprocess.run(["g++", "anotherCode.cpp", "-o", "anotherCode"])
     myRes = subprocess.run(["./myCode", "<", "test.in"], capture_output=True).stdout.decode()
-    anotherRes = subprocess.run(["./anotherCode", "<", "test.txt"], capture_output=True).stdout.decode()
+    anotherRes = subprocess.run(["./anotherCode", "<", "test.in"], capture_output=True).stdout.decode()
     print("myCode: ")
     print(myRes)
     print("anotherCode: ")
